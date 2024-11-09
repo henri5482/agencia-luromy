@@ -27,7 +27,7 @@ const Navbar = () => {
   
 
   return (
-    <header
+    <div
     role="banner"
     className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-around p-4 mx-auto cursor-pointer transition-all duration-500 ease-in-out ${
       isScrolled
@@ -53,7 +53,7 @@ const Navbar = () => {
       <div className="flex items-center gap-4 sm:gap-6" aria-label="Conctato">
         <ToggleTheme />
       </div>
-    </header>
+    </div>
   );
 };
 
