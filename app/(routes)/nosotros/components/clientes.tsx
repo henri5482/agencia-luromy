@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import Empresas from "./empresas";
@@ -69,6 +70,7 @@ const Clientes: React.FC = () => {
         {renderPage()}
       </motion.div>
     </div>
+            <Link href={"/contacto"}>
     <div className="flex justify-center items-center py-16">
       <motion.button
         className="w-80 h-20 text-2xl font-bold text-white bg-[#1C3C3F] rounded-lg shadow-lg transition duration-300 overflow-hidden"
@@ -87,11 +89,12 @@ const Clientes: React.FC = () => {
           setIconColor("text-white"); // Cambia el color del ícono a blanco al dejar el mouse
         }}
       >
-        <span className="transition-opacity duration-300 flex items-center   justify-center gap-2">
+        <span className="transition-opacity duration-300 flex items-center  justify-center gap-2">
           {buttonText} <FaArrowRight className={`${iconColor}`} />
         </span>
       </motion.button>
     </div>
+          </Link>
     </>
   );
 };

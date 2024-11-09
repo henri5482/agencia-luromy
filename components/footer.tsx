@@ -63,7 +63,7 @@ const Footer = () => {
             <p>
               <a
                 href="https://wa.me/51930134408"
-                className="underline dark:text-slate-100 hover:text-[#1AD6B2]"
+                className="underline  hover:text-[#1AD6B2]"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -74,7 +74,7 @@ const Footer = () => {
             <p>
               <a
                 href="javascript:void(0);"
-                className="underline dark:text-slate-100 hover:text-[#1AD6B2]"
+                className="underline  hover:text-[#1AD6B2]"
                 onClick={openMailClient}
                 rel="noopener noreferrer"
               >

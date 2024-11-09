@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -81,6 +82,8 @@ export default function FAQ() {
           </div>
         ))}
       </div>
+      <Link href={"/contacto"}>
+
       <div className="flex justify-center items-center py-16">
       <motion.button
         className="w-80 h-20 text-2xl font-bold text-white bg-slate-800 rounded-lg shadow-lg transition duration-300 overflow-hidden"
@@ -104,6 +107,8 @@ export default function FAQ() {
         </span>
       </motion.button>
     </div>
+
+</Link>
     </div>
   );
 }

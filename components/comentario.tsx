@@ -102,6 +102,7 @@ const Comentarios: React.FC = () => {
           </div>
         </div>
       </div>
+        <Link href={"/contacto"}>
       <div className="flex justify-center items-center py-20">
         <motion.button
           className="w-80 h-20 text-2xl font-bold text-white bg-[#1C3C3F] rounded-lg shadow-lg transition duration-300 overflow-hidden"
@@ -120,14 +121,13 @@ const Comentarios: React.FC = () => {
             setIconColor("text-white"); // Cambia el color del ícono a blanco al dejar el mouse
           }}
         >
-          <Link href={"/contacto"}>
           
           <span className="transition-opacity duration-300 flex items-center  justify-center gap-2">
             {buttonText} <FaArrowRight className={`${iconColor}`} />
           </span>
-          </Link>
         </motion.button>
       </div>
+          </Link>
     </>
   );
 };
